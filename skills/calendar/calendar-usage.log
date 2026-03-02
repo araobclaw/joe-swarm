@@ -1,0 +1,10 @@
+2026-03-02T17:27:06+00:00 | today
+2026-03-02T17:27:11+00:00 | upcoming days=30 max=20
+2026-03-02T17:27:16+00:00 | quick text='Test event tomorrow at 3pm'
+2026-03-02T17:27:21+00:00 | upcoming days=2 max=20
+2026-03-02T17:27:25+00:00 | get id=648dp7bqkjuvh7f8t86n7s6g5c
+2026-03-02T17:27:29+00:00 | search query='Test' max=10
+2026-03-02T17:27:34+00:00 | create file=/tmp/test-event.json
+2026-03-02T17:27:39+00:00 | freebusy start=2026-03-03 end=2026-03-04
+2026-03-02T17:27:45+00:00 | delete id=648dp7bqkjuvh7f8t86n7s6g5c
+2026-03-02T17:27:46+00:00 | delete id=va6deri2k4jeidp0bvprbqaud8

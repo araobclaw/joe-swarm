@@ -1,0 +1,5 @@
+2026-02-28T15:20:52+00:00 | START | conv= | model=claude-opus-4-6 | msg=List all projects/directories in /home/exedev (exclude dotfiles/.*/__pycache__, empty dirs). For eac
+2026-02-28T15:20:56+00:00 | START | conv=cGEQFUH | model=claude-opus-4.5 | msg=List all projects/directories in /home/exedev (exclude dotfiles/.*/__pycache__, empty dirs). For eac
+2026-02-28T15:21:11+00:00 | RESPONSE | conv=cGEQFUH
+2026-02-28T15:21:43+00:00 | RESPONSE | conv=cGEQFUH
+2026-02-28T15:22:13+00:00 | RESPONSE | conv=cGEQFUH

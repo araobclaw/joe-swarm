@@ -1,0 +1,5 @@
+{
+  "slug": "gmail",
+  "version": "1.0.0",
+  "description": "Gmail operations: send, read, label, archive emails via joearaobassistant@gmail.com"
+}

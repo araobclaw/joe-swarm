@@ -1,0 +1,17 @@
+# Secrets
+.env
+gmail-oauth.env
+gmail-sa.json
+
+# Runtime / state
+.openclaw/
+.clawhub/
+.learnings/
+
+# One-off scripts (not part of the system)
+clone_fp.sh
+gmail-oauth-device.sh
+gmail-refresh.sh
+gmail-scan.sh
+shelley-task
+brain/
