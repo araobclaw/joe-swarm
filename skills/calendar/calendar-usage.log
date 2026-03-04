@@ -8,3 +8,14 @@
 2026-03-02T17:27:39+00:00 | freebusy start=2026-03-03 end=2026-03-04
 2026-03-02T17:27:45+00:00 | delete id=648dp7bqkjuvh7f8t86n7s6g5c
 2026-03-02T17:27:46+00:00 | delete id=va6deri2k4jeidp0bvprbqaud8
+2026-03-03T17:05:03+00:00 | create file=/tmp/event-pizza.json
+2026-03-03T17:05:10+00:00 | create file=/tmp/event-promo.json
+2026-03-03T17:35:32+00:00 | create file=/tmp/event-andrea-pizza.json
+2026-03-03T17:35:38+00:00 | create file=/tmp/event-andrea-pub.json
+2026-03-03T17:36:57+00:00 | upcoming days=30 max=10
+2026-03-03T17:41:38+00:00 | delete id=oivkhle1vbousrruosvfs7sdc0
+2026-03-03T17:41:39+00:00 | delete id=e3i2gtbapkaan5qls99fpm4v34
+2026-03-03T19:16:41+00:00 | create file=/tmp/cal-event-1111903966.json
+2026-03-03T19:16:41+00:00 | create file=/tmp/cal-event-3746223535.json
+2026-03-03T19:16:42+00:00 | create file=/tmp/cal-event-2828064494.json
+2026-03-03T20:14:44+00:00 | upcoming days=7 max=10

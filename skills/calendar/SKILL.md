@@ -11,7 +11,7 @@ Manages Joe's Google Calendar (`joearaobassistant@gmail.com`) via OAuth2 API.
 
 ## ⛔ When NOT to Use This Skill
 
-- **Do NOT create events unless Arao explicitly asks** — never speculatively create calendar entries
+- **Do NOT create events unless Arao explicitly asks OR an Open Brain notification includes dates** — see "Open Brain auto-calendar" below
 - **Do NOT delete or modify events unless Arao asks** — calendar is sensitive
 - **Do NOT check calendar outside of heartbeat or explicit requests**
 - **Do NOT share calendar details with anyone other than Arao**
@@ -25,6 +25,15 @@ Manages Joe's Google Calendar (`joearaobassistant@gmail.com`) via OAuth2 API.
 3. **Arao asks about availability** — "am I free Thursday?", "when's my next meeting?"
 4. **Heartbeat calendar check** — upcoming events in next 24-48h (2-4x/day)
 5. **Arao asks to modify/cancel an event** — explicit request only
+6. **Open Brain auto-calendar** — when you receive an Open Brain action notification with dates, create calendar events for those dates automatically (see below)
+
+### Open Brain Auto-Calendar
+
+When you receive a `🧠 Open Brain — action detected` notification that includes dates:
+1. Create calendar event(s) for each relevant date using `quick` or `create`
+2. Use the action item as the event summary
+3. Include the full thought content in the event description
+4. Confirm to Arao what you created: "📅 Adicionei ao calendário: [summary] em [date]"
 
 ## Scripts
 
