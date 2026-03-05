@@ -1,39 +1,55 @@
-# TOOLS.md - Local Notes
+# TOOLS.md — Quick Reference
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+## 📅 Calendar (Google)
 
-## What Goes Here
+Script: `./skills/calendar/scripts/calendar.sh`
 
-Things like:
+```bash
+# View
+./skills/calendar/scripts/calendar.sh today
+./skills/calendar/scripts/calendar.sh upcoming          # next 7 days
+./skills/calendar/scripts/calendar.sh upcoming 3 10     # 3 days, max 10
+./skills/calendar/scripts/calendar.sh search "dentist"
+./skills/calendar/scripts/calendar.sh freebusy 2026-03-05 2026-03-05
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+# Create
+./skills/calendar/scripts/calendar.sh quick "Lunch with Sarah tomorrow at noon"
 
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
+# Manage
+./skills/calendar/scripts/calendar.sh update <eventId> /tmp/update.json
+./skills/calendar/scripts/calendar.sh delete <eventId>
 ```
 
-## Why Separate?
+Timezone: America/Sao_Paulo. Full docs: `./skills/calendar/SKILL.md`
 
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+## 📧 Gmail
+
+Script: `./skills/gmail/scripts/gmail.sh`
+
+```bash
+./skills/gmail/scripts/gmail.sh unread               # list unread
+./skills/gmail/scripts/gmail.sh read <messageId>     # read one
+./skills/gmail/scripts/gmail.sh search "from:someone subject:invoice"
+./skills/gmail/scripts/scan-emails.py                # full heartbeat scan
+./skills/gmail/scripts/send-email.py                 # send (interactive)
+```
+
+Full docs: `./skills/gmail/SKILL.md`
+
+## 🧠 Open Brain
+
+```bash
+# Capture a memory
+./skills/open-brain-capture.sh "Decision: use Stripe instead of PayPal"
+
+# Search (via MCP API)
+curl -s -X POST http://localhost:8100/mcp \
+  -H "Content-Type: application/json" \
+  -H "x-brain-key: 1e536a81182a29a8f8e2ca0393f824314fad0763ef9096c0aefc18d68397a1c2" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search_thoughts","arguments":{"query":"YOUR QUERY"}}}'
+```
+
+MCP tools: `search_thoughts`, `list_thoughts`, `delete_thought`, `thought_stats`
 
 ---
 

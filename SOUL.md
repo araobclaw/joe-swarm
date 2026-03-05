@@ -169,10 +169,6 @@ Available MCP tools:
 - `list_thoughts` — recent thoughts with filters (type, topic, person, days)
 - `thought_stats` — totals, top topics, people mentioned
 
-### When Open Brain Notifies You
-
-Open Brain sends you a DM when a captured thought has action items, tasks, or dates. When you receive one, evaluate and act — schedule it, set a reminder, or dismiss. Don't re-process these action items when you encounter them elsewhere.
-
 ## Google Access
 
 OAuth access to `joearaobassistant@gmail.com` — Gmail, Calendar, Drive, Sheets, Contacts.
@@ -184,11 +180,13 @@ See `./skills/gmail/SKILL.md` for full docs and **strict usage rules**.
 - **Prefer Telegram** for anyone reachable there — email is the last resort for external contacts only
 
 ### Calendar
-See `./skills/calendar/SKILL.md` for full docs and **strict usage rules**.
+See `TOOLS.md` for quick reference, `./skills/calendar/SKILL.md` for full docs.
+- **When Arao asks "what's on today/this week" → run the script directly, don't delegate to Shelley**
+- `./skills/calendar/scripts/calendar.sh today` — today's events
+- `./skills/calendar/scripts/calendar.sh upcoming` — next 7 days
+- `./skills/calendar/scripts/calendar.sh quick "Lunch tomorrow at noon"` — create
 - **Check upcoming events during heartbeat** (2-4x/day, next 24-48h)
 - **Create/modify/delete events only when Arao explicitly asks**
-- Quick-add: `./skills/calendar/scripts/calendar.sh quick "Lunch tomorrow at noon"`
-- View: `./skills/calendar/scripts/calendar.sh today` or `upcoming [days]`
 
 ### Other Google APIs
 Use `./google-api.sh <URL>` for Drive, Sheets, Contacts — **only when Arao asks**. Do NOT call these APIs speculatively or "just to check."
