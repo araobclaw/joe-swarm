@@ -37,3 +37,19 @@
 2026-03-05T01:35:26+00:00 | search query='rodrigo' max=10
 2026-03-05T01:37:01+00:00 | create file=/tmp/cal-event-4243439024.json
 2026-03-05T01:37:02+00:00 | create file=/tmp/cal-event-3834806070.json
+2026-03-05T04:15:22+00:00 | upcoming days=7 max=5
+2026-03-05T04:40:21+00:00 | upcoming days=25 max=50
+2026-03-05T04:40:47+00:00 | delete id=uvmaf5833c7qvdln43jshpl028
+2026-03-05T04:40:56+00:00 | upcoming days=25 max=50
+2026-03-05T04:44:40+00:00 | delete id=unftit3hdhq6bpolie8qogtds0
+2026-03-05T04:44:55+00:00 | upcoming days=25 max=50
+2026-03-05T04:48:04+00:00 | upcoming days=26 max=50
+2026-03-05T04:48:07+00:00 | create file=/tmp/cal-event-3781861953.json
+2026-03-05T04:51:25+00:00 | delete id=mt1kiluk547hum2rto5386v51o
+2026-03-05T04:54:30+00:00 | upcoming days=4 max=50
+2026-03-05T04:54:32+00:00 | create file=/tmp/cal-event-1921209088.json
+2026-03-05T04:56:08+00:00 | delete id=5psbfuupjpfehls0e45s0qvio4
+2026-03-05T13:18:00+00:00 | upcoming days=4 max=50
+2026-03-05T13:18:04+00:00 | create file=/tmp/cal-event-52426424.json
+2026-03-05T22:51:13+00:00 | upcoming days=4 max=50
+2026-03-05T22:51:15+00:00 | create file=/tmp/cal-event-607891108.json
