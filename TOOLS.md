@@ -49,7 +49,43 @@ curl -s -X POST http://localhost:8100/mcp \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search_thoughts","arguments":{"query":"YOUR QUERY"}}}'
 ```
 
-MCP tools: `search_thoughts`, `list_thoughts`, `delete_thought`, `thought_stats`
+MCP tools: `search_thoughts`, `list_thoughts`, `delete_thought`, `thought_stats`, `search_people`, `list_people`
+
+### ✅ Task Management
+
+Script: `./skills/open-brain-tasks.sh`
+
+```bash
+# List pending tasks (sorted by urgency: overdue → due soon → no date)
+./skills/open-brain-tasks.sh list pending
+./skills/open-brain-tasks.sh list done
+
+# Task stats (pending, overdue, due today, due this week)
+./skills/open-brain-tasks.sh stats
+
+# Complete a task (8-char ID prefix works)
+./skills/open-brain-tasks.sh complete f7fe4127
+
+# Cancel a task
+./skills/open-brain-tasks.sh cancel f7fe4127
+
+# Create a task
+./skills/open-brain-tasks.sh create '{"title":"Ligar pro João","priority":"high","due_date":"2026-03-15","person":"João","tags":["contato"]}'
+
+# Update a task (pass id + fields to change)
+./skills/open-brain-tasks.sh update '{"id":"f7fe4127...","priority":"low","due_date":"2026-03-20"}'
+```
+
+Tasks have: `title`, `status` (pending/done/cancelled), `priority` (high/medium/low), `due_date`, `person`, `tags[]`.
+Tasks are auto-created when Brain captures thoughts with action items.
+
+**When Arao says something like "já falei com o Marcelo" or "done with the Marcelo task":**
+1. Run `./skills/open-brain-tasks.sh list pending` to find the matching task
+2. Match by person name/topic from what Arao said
+3. Complete it with `./skills/open-brain-tasks.sh complete <id>`
+4. If ambiguous, show options and ask which one
+
+MCP task tools: `create_task`, `list_tasks`, `complete_task`, `update_task`, `delete_task`, `task_stats`
 
 ---
 
